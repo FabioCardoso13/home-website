@@ -43,7 +43,4 @@ def logout():
     flash("Sessão terminada!")
     return redirect(url_for("home"))
 
-app.run(
-    host="0.0.0.0",
-    debug=True
-    )
+app.run(host="0.0.0.0", port=5000)
