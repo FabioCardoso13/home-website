@@ -1,0 +1,30 @@
+body{
+    background-image: url("sissi2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 30%;
+}
+
+p{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+
+input{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    margin-left: 19%;
+    width: 600px;
+    height: 150px;
+}
+
+#sub{
+    background-color: white;
+    color: blue;
+    margin-top: 200px;
+}

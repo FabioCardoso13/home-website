@@ -1,0 +1,36 @@
+body{
+    background-image: url("sissi.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+button{
+    width: 400px;
+    height: 400px;
+    font-size: 50px;
+    margin: 10px;
+}
+
+h1{
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 5px blue, 0px -5px 5px blue;
+    margin-bottom: 150px;
+}
+
+
+button{
+    background-color: blue;
+    color: white;
+}
+
+#loic, #comi{
+    margin-left: 70px;
+}
+
+#limp{
+    margin-left: 275px;
+}

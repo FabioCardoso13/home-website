@@ -1,0 +1,12 @@
+{%extends "base.html" %}
+{% block title %}Adicionar limpar{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='adicionar.css') }}">
+{% endblock %}
+{% block content %}
+<h1>Adicionar limpeza bebedouro</h1>
+<form method="POST" action="#">
+    <input name="adLimpar" type="date"><br>
+    <input type="submit" value="Submeter">
+</form>
+{% endblock %}

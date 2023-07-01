@@ -1,0 +1,23 @@
+{%extends "base.html" %}
+{% block title %}Loiça{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='table.css') }}">
+{% endblock %}
+{% block content %}
+<h1>Loiça</h1>
+<table border="1">
+{% for vez in loicaTabela %}
+    <tr>
+        <td>{{vez[0]}}</td>
+        <td>{{vez[1]}}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>
+<div><span>Vez de </span><span id="quem">{{aIr}}</span></div>
+
+<form action="#" method="POST">
+    <input type="submit" value="Adicionar">
+</form>
+
+{% endblock %}

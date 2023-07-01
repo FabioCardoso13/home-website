@@ -1,0 +1,12 @@
+{%extends "base.html" %}
+{% block title %}Adicionar buscar{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='adicionar.css') }}">
+{% endblock %}
+{% block content %}
+<h1>Adicionar buscar comida</h1>
+<form method="POST" action="#">
+    <input name="adBuscar" type="date"><br>
+    <input type="submit" value="Submeter">
+</form>
+{% endblock %}

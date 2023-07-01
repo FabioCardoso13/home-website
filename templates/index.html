@@ -1,0 +1,21 @@
+{%extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1 style="font-size: 100px;">Bem-vindo {{nome}}</h1>
+
+<div class="button-container">
+<form method="POST" action="{{ url_for('button_pressed') }}">
+    <button id="loic" type="submit" name="botao" value="loi">Loiça</button>
+    <button id="lixo" type="submit" name="botao" value="lix">Lixo</button>
+    <button id="comi" type="submit" name="botao" value="bus">Buscar comida</button>
+    <button id="leit" type="submit" name="botao" value="lei">Buscar leite</button>
+    <button id="limp" type="submit" name="botao" value="lim">Limpeza do bebedouro</button>
+</form>
+</div>
+
+{% endblock %}
